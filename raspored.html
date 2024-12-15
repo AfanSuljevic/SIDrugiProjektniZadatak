@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raspored - FitFusion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg custom-navbar p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">FitFusion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="raspored.html">Raspored</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="informacije.html">Informacije</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="raspored" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Raspored Treninga</h2>
+      <p class="text-center lead mb-4">Planirajte svoj trening uz naš sedmični raspored.</p>
+
+      <div class="table-responsive">
+        <table id="schedule-table" class="table table-striped table-hover text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>Vrijeme</th>
+              <th>Ponedjeljak</th>
+              <th>Utorak</th>
+              <th>Srijeda</th>
+              <th>Četvrtak</th>
+              <th>Petak</th>
+              <th>Subota</th>
+              <th>Nedjelja</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:00 - 09:00</td>
+              <td>Joga</td>
+              <td>HIIT</td>
+              <td>Pilates</td>
+              <td>Cardio</td>
+              <td>Snaga</td>
+              <td>CrossFit</td>
+              <td>Joga</td>
+            </tr>
+            <tr>
+              <td>10:00 - 11:00</td>
+              <td>Snaga</td>
+              <td>Cardio</td>
+              <td>HIIT</td>
+              <td>Pilates</td>
+              <td>Joga</td>
+              <td>Cardio</td>
+              <td>Snaga</td>
+            </tr>
+            <tr>
+              <td>18:00 - 19:00</td>
+              <td>CrossFit</td>
+              <td>Snaga</td>
+              <td>HIIT</td>
+              <td>Cardio</td>
+              <td>Pilates</td>
+              <td>Joga</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>19:00 - 20:00</td>
+              <td>Cardio</td>
+              <td>Pilates</td>
+              <td>CrossFit</td>
+              <td>Snaga</td>
+              <td>HIIT</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="trening-details" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4"><b>Detalji Treninga</b></h2>
+      <p class="text-center lead mb-4">Kliknite na bilo koji trening u rasporedu da biste saznali više informacija.</p>
+  
+      <div id="trening-info" class="text-center">
+        <p>Odaberite trening da biste vidjeli više informacija!</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 FitFusion Teretana. Sva prava zadržana.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

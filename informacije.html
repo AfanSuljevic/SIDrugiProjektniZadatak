@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitFusion - Teretana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg custom-navbar p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">FitFusion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="raspored.html">Raspored</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="informacije.html">Informacije</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <section id="treneri" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center text-dark mb-4">Naši Treneri</h2>
+      <p class="text-center lead mb-4">Upoznajte naš tim stručnjaka koji će vam pomoći da postignete svoje ciljeve.</p>
+  
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="slike/trener11.jpg" class="card-img-top" alt="Trener 1">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Amar Mulahasanović</h5>
+              <p class="card-text text-dark">Specijalizovan za HIIT i funkcionalne treninge. Amar je strastven u pomaganju svojim klijentima da poboljšaju fizičku izdržljivost.</p>
+              <a href="javascript:void(0);" class="btn btn-primary" onclick="showTrenerInfo('Amar')">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="slike/trener2.jpg" class="card-img-top" alt="Trener 2">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Jasmin Nariković</h5>
+              <p class="card-text text-dark">Jasmin je specijalista za treninge snage i CrossFit. Sa njegovim iskustvom, možete postići vrhunske rezultate u fizičkoj spremnosti.</p>
+              <a href="javascript:void(0);" class="btn btn-primary" onclick="showTrenerInfo('Jasmin')">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="slike/trener3.jpg" class="card-img-top" alt="Trener 3">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Razija Muharemović</h5>
+              <p class="card-text text-dark">Razija je sertifikovani pilates instruktor sa iskustvom u jogi. Njena strast je pomoći ljudima da postignu unutrašnju ravnotežu i fizičku snagu.</p>
+              <a href="javascript:void(0);" class="btn btn-primary" onclick="showTrenerInfo('Razija')">Saznaj više</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="modal" id="trenerModal" style="display:none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Detalji Trenera</h5>
+        <button class="close-modal" id="close-btn">Zatvori</button>
+      </div>
+      <div class="modal-body" id="trener-info"></div>
+    </div>
+  </div>
+  <section id="faq" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center text-dark mb-4"><b>Najčešća Pitanja</b></h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Kako mogu postati član FitFusion-a?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Možete se prijaviti putem naše web stranice ili direktno u teretani. Naši zaposlenici će vam pomoći u procesu prijave.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Koje vrste članstva nudite?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Nudimo mjesečno, tromjesečno i godišnje članstvo, sa dodatnim popustima za studente i penzionere.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Da li su personalni treninzi uključeni u članstvo?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Personalni treninzi nisu uključeni u osnovno članstvo, ali ih možete ugovoriti po posebnim cijenama.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Koje su radno vreme i lokacija teretane?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Teretana je otvorena svakog dana od 6:00 do 22:00. Nalazimo se na adresi: Ulica Fisica Ahmeda, 11, Sarajevo.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Da li nudite grupne treninge?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Da, nudimo različite grupne treninge poput joge, pilatesa, kardio programa i HIIT-a,pogledajte naš Raspored.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 FitFusion Teretana. Sva prava zadržana.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        function showTrenerInfo(trenerName) {
+            const trenerInfoDiv = document.getElementById("trener-info");
+            const modal = document.getElementById('trenerModal');
+            let details = "";
+
+            switch (trenerName) {
+                case "Amar":
+                    details = `
+                        <h3>Amar Mulahasanović</h3>
+                        <ul>
+                            <li>Specijalizacija: HIIT i funkcionalni treninzi</li>
+                            <li>Iskustvo: 5 godina rada u fitness industriji</li>
+                            <li>Opis: Amar je strastven u pomaganju ljudima da poboljšaju svoju fizičku izdržljivost kroz visoko intenzivne treninge.</li>
+                        </ul>
+                    `;
+                    break;
+                case "Jasmin":
+                    details = `
+                        <h3>Jasmin Nariković</h3>
+                        <ul>
+                            <li>Specijalizacija: Snaga i CrossFit</li>
+                            <li>Iskustvo: 6 godina rada u treniranju snage</li>
+                            <li>Opis: Jasmin je ekspert u CrossFit treningu, pomažući klijentima da postignu vrhunske rezultate u snazi i kondiciji.</li>
+                        </ul>
+                    `;
+                    break;
+                case "Razija":
+                    details = `
+                        <h3>Razija Muharemović</h3>
+                        <ul>
+                            <li>Specijalizacija: Pilates i joga</li>
+                            <li>Iskustvo: 4 godine kao instruktorka joge i pilatesa</li>
+                            <li>Opis: Razija se fokusira na ravnotežu tela i uma kroz kontrolisane pokrete pilatesa i joge.</li>
+                        </ul>
+                    `;
+                    break;
+                default:
+                    details = "<p>Detalji za ovog trenera nisu dostupni.</p>";
+            }
+
+            trenerInfoDiv.innerHTML = details;
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('trenerModal');
+            modal.style.display = "none";
+        }
+
+        const closeBtn = document.getElementById("close-btn");
+        closeBtn.addEventListener("click", closeModal);
+
+        const saznajBtnAmar = document.querySelector('a[href="javascript:void(0);"][onclick="showTrenerInfo(\'Amar\')"]');
+        const saznajBtnJasmin = document.querySelector('a[href="javascript:void(0);"][onclick="showTrenerInfo(\'Jasmin\')"]');
+        const saznajBtnRazija = document.querySelector('a[href="javascript:void(0);"][onclick="showTrenerInfo(\'Razija\')"]');
+
+        saznajBtnAmar.addEventListener("click", function() {
+            showTrenerInfo('Amar');
+        });
+
+        saznajBtnJasmin.addEventListener("click", function() {
+            showTrenerInfo('Jasmin');
+        });
+
+        saznajBtnRazija.addEventListener("click", function() {
+            showTrenerInfo('Razija');
+        });
+
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
